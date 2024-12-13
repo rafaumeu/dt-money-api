@@ -1,31 +1,36 @@
-// See https://github.com/typicode/json-server#module
-const jsonServer = require('json-server')
+const jsonServer = require('json-server');
+const server = jsonServer.create();
+const router = jsonServer.router('db.json');
+const middlewares = jsonServer.defaults();
 
-const server = jsonServer.create()
+// CORS and Header Configuration
+server.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  
+  // Handle OPTIONS requests
+  if (req.method === 'OPTIONS') {
+    return res.sendStatus(200);
+  }
+  
+  next();
+});
 
-// Uncomment to allow write operations
-// const fs = require('fs')
-// const path = require('path')
-// const filePath = path.join('db.json')
-// const data = fs.readFileSync(filePath, "utf-8");
-// const db = JSON.parse(data);
-// const router = jsonServer.router(db)
-
-// Comment out to allow write operations
-const router = jsonServer.router('db.json')
-
-const middlewares = jsonServer.defaults()
-
-server.use(middlewares)
-// Add this before server.use(router)
+// URL Rewriter from the new repository
 server.use(jsonServer.rewriter({
-    '/api/*': '/$1',
-    '/blog/:resource/:id/show': '/:resource/:id'
-}))
-server.use(router)
-server.listen(3000, () => {
-    console.log('JSON Server is running')
-})
+  '/api/*': '/$1',
+  '/blog/:resource/:id/show': '/:resource/:id'
+}));
 
-// Export the Server API
-module.exports = server
+server.use(middlewares);
+server.use(router);
+
+// Optional: Add server listening if needed for local development
+if (require.main === module) {
+  server.listen(3000, () => {
+    console.log('JSON Server is running')
+  });
+}
+
+module.exports = server;
