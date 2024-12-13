@@ -1,9 +1,404 @@
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": { "name": "typicode" }
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Venda de produto A",
+      "price": 5000,
+      "type": "income",
+      "category": "Vendas",
+      "createdAt": "2021-01-15 10:00:00"
+    },
+    {
+      "id": 2,
+      "description": "Compra de insumos",
+      "price": 3000,
+      "type": "outcome",
+      "category": "Insumos",
+      "createdAt": "2021-01-16 14:30:00"
+    },
+    {
+      "id": 3,
+      "description": "Serviço de consultoria",
+      "price": 8000,
+      "type": "income",
+      "category": "Consultoria",
+      "createdAt": "2021-01-17 09:15:00"
+    },
+    {
+      "id": 4,
+      "description": "Aluguel do escritório",
+      "price": 2000,
+      "type": "outcome",
+      "category": "Infraestrutura",
+      "createdAt": "2021-01-18 11:45:00"
+    },
+    {
+      "id": 5,
+      "description": "Venda de produto B",
+      "price": 12000,
+      "type": "income",
+      "category": "Vendas",
+      "createdAt": "2021-01-19 15:30:00"
+    },
+    {
+      "id": 6,
+      "description": "Marketing digital",
+      "price": 4500,
+      "type": "outcome",
+      "category": "Marketing",
+      "createdAt": "2021-01-20 16:00:00"
+    },
+    {
+      "id": 7,
+      "description": "Freelancer de design",
+      "price": 3000,
+      "type": "income",
+      "category": "Design",
+      "createdAt": "2021-01-21 13:00:00"
+    },
+    {
+      "id": 8,
+      "description": "Compra de equipamentos",
+      "price": 7000,
+      "type": "outcome",
+      "category": "Equipamentos",
+      "createdAt": "2021-01-22 10:20:00"
+    },
+    {
+      "id": 9,
+      "description": "Manutenção de sistemas",
+      "price": 4000,
+      "type": "outcome",
+      "category": "TI",
+      "createdAt": "2021-01-23 08:45:00"
+    },
+    {
+      "id": 10,
+      "description": "Venda de pacote premium",
+      "price": 18000,
+      "type": "income",
+      "category": "Vendas",
+      "createdAt": "2021-01-24 17:30:00"
+    },
+    {
+      "id": 11,
+      "description": "Desenvolvimento de app",
+      "price": 20000,
+      "type": "income",
+      "category": "Dev",
+      "createdAt": "2021-01-25 10:00:00"
+    },
+    {
+      "id": 12,
+      "description": "Assinatura de software",
+      "price": 500,
+      "type": "outcome",
+      "category": "Software",
+      "createdAt": "2021-01-26 12:45:00"
+    },
+    {
+      "id": 13,
+      "description": "Compra de material de escritório",
+      "price": 800,
+      "type": "outcome",
+      "category": "Material",
+      "createdAt": "2021-01-27 14:10:00"
+    },
+    {
+      "id": 14,
+      "description": "Treinamento de equipe",
+      "price": 1500,
+      "type": "outcome",
+      "category": "RH",
+      "createdAt": "2021-01-28 09:50:00"
+    },
+    {
+      "id": 15,
+      "description": "Venda de serviço de suporte",
+      "price": 6000,
+      "type": "income",
+      "category": "Suporte",
+      "createdAt": "2021-01-29 16:20:00"
+    },
+    {
+      "id": 16,
+      "description": "Compra de licença de software",
+      "price": 3000,
+      "type": "outcome",
+      "category": "Software",
+      "createdAt": "2021-01-30 11:30:00"
+    },
+    {
+      "id": 17,
+      "description": "Venda de consultoria empresarial",
+      "price": 10000,
+      "type": "income",
+      "category": "Consultoria",
+      "createdAt": "2021-01-31 13:15:00"
+    },
+    {
+      "id": 18,
+      "description": "Manutenção de servidores",
+      "price": 2500,
+      "type": "outcome",
+      "category": "Infraestrutura",
+      "createdAt": "2021-02-01 09:45:00"
+    },
+    {
+      "id": 19,
+      "description": "Venda de produto C",
+      "price": 7000,
+      "type": "income",
+      "category": "Vendas",
+      "createdAt": "2021-02-02 15:00:00"
+    },
+    {
+      "id": 20,
+      "description": "Pagamento de fornecedores",
+      "price": 4000,
+      "type": "outcome",
+      "category": "Insumos",
+      "createdAt": "2021-02-03 10:30:00"
+    },
+    {
+      "id": 21,
+      "description": "Venda de e-book",
+      "price": 500,
+      "type": "income",
+      "category": "Educação",
+      "createdAt": "2021-02-04 11:00:00"
+    },
+    {
+      "id": 22,
+      "description": "Contrato de assessoria",
+      "price": 12000,
+      "type": "income",
+      "category": "Consultoria",
+      "createdAt": "2021-02-05 14:20:00"
+    },
+    {
+      "id": 23,
+      "description": "Compra de licença de imagens",
+      "price": 800,
+      "type": "outcome",
+      "category": "Design",
+      "createdAt": "2021-02-06 10:50:00"
+    },
+    {
+      "id": 24,
+      "description": "Produção de vídeo institucional",
+      "price": 6000,
+      "type": "outcome",
+      "category": "Marketing",
+      "createdAt": "2021-02-07 09:15:00"
+    },
+    {
+      "id": 25,
+      "description": "Venda de curso online",
+      "price": 1000,
+      "type": "income",
+      "category": "Educação",
+      "createdAt": "2021-02-08 16:10:00"
+    },
+    {
+      "id": 26,
+      "description": "Venda de licença de software",
+      "price": 15000,
+      "type": "income",
+      "category": "Software",
+      "createdAt": "2021-02-09 12:00:00"
+    },
+    {
+      "id": 27,
+      "description": "Compra de domínio",
+      "price": 150,
+      "type": "outcome",
+      "category": "Infraestrutura",
+      "createdAt": "2021-02-10 14:40:00"
+    },
+    {
+      "id": 28,
+      "description": "Pagamento de impostos",
+      "price": 5000,
+      "type": "outcome",
+      "category": "Tributos",
+      "createdAt": "2021-02-11 09:00:00"
+    },
+    {
+      "id": 29,
+      "description": "Venda de serviço personalizado",
+      "price": 4000,
+      "type": "income",
+      "category": "Serviços",
+      "createdAt": "2021-02-12 16:30:00"
+    },
+    {
+      "id": 30,
+      "description": "Contrato de publicidade",
+      "price": 7000,
+      "type": "income",
+      "category": "Publicidade",
+      "createdAt": "2021-02-13 12:15:00"
+    },
+    {
+      "id": 31,
+      "description": "Compra de mobiliário",
+      "price": 3000,
+      "type": "outcome",
+      "category": "Infraestrutura",
+      "createdAt": "2021-02-14 13:20:00"
+    },
+    {
+      "id": 32,
+      "description": "Venda de template web",
+      "price": 2000,
+      "type": "income",
+      "category": "Design",
+      "createdAt": "2021-02-15 10:45:00"
+    },
+    {
+      "id": 33,
+      "description": "Treinamento de liderança",
+      "price": 3500,
+      "type": "outcome",
+      "category": "RH",
+      "createdAt": "2021-02-16 08:30:00"
+    },
+    {
+      "id": 34,
+      "description": "Contrato de suporte técnico",
+      "price": 8000,
+      "type": "income",
+      "category": "TI",
+      "createdAt": "2021-02-17 14:00:00"
+    },
+    {
+      "id": 35,
+      "description": "Compra de materiais promocionais",
+      "price": 2000,
+      "type": "outcome",
+      "category": "Marketing",
+      "createdAt": "2021-02-18 11:15:00"
+    },
+    {
+      "id": 36,
+      "description": "Manutenção de veículo da empresa",
+      "price": 1000,
+      "type": "outcome",
+      "category": "Infraestrutura",
+      "createdAt": "2021-02-19 10:30:00"
+    },
+    {
+      "id": 37,
+      "description": "Venda de serviço de automação",
+      "price": 12000,
+      "type": "income",
+      "category": "TI",
+      "createdAt": "2021-02-20 16:45:00"
+    },
+    {
+      "id": 38,
+      "description": "Compra de uniforme",
+      "price": 1500,
+      "type": "outcome",
+      "category": "RH",
+      "createdAt": "2021-02-21 09:00:00"
+    },
+    {
+      "id": 39,
+      "description": "Venda de curso de especialização",
+      "price": 2500,
+      "type": "income",
+      "category": "Educação",
+      "createdAt": "2021-02-22 11:45:00"
+    },
+    {
+      "id": 40,
+      "description": "Consultoria financeira",
+      "price": 8000,
+      "type": "income",
+      "category": "Consultoria",
+      "createdAt": "2021-02-23 13:10:00"
+    },
+    {
+      "id": 41,
+      "description": "Venda de pacote básico",
+      "price": 4000,
+      "type": "income",
+      "category": "Serviços",
+      "createdAt": "2021-02-24 16:00:00"
+    },
+    {
+      "id": 42,
+      "description": "Desenvolvimento de plataforma",
+      "price": 25000,
+      "type": "income",
+      "category": "Dev",
+      "createdAt": "2021-02-25 09:30:00"
+    },
+    {
+      "id": 43,
+      "description": "Pagamento de energia",
+      "price": 2000,
+      "type": "outcome",
+      "category": "Infraestrutura",
+      "createdAt": "2021-02-26 11:20:00"
+    },
+    {
+      "id": 44,
+      "description": "Compra de servidor dedicado",
+      "price": 10000,
+      "type": "outcome",
+      "category": "TI",
+      "createdAt": "2021-02-27 14:10:00"
+    },
+    {
+      "id": 45,
+      "description": "Venda de consultoria técnica",
+      "price": 15000,
+      "type": "income",
+      "category": "Consultoria",
+      "createdAt": "2021-02-28 13:00:00"
+    },
+    {
+      "id": 46,
+      "description": "Compra de software de automação",
+      "price": 3000,
+      "type": "outcome",
+      "category": "Software",
+      "createdAt": "2021-03-01 15:15:00"
+    },
+    {
+      "id": 47,
+      "description": "Venda de pacote empresarial",
+      "price": 20000,
+      "type": "income",
+      "category": "Serviços",
+      "createdAt": "2021-03-02 10:40:00"
+    },
+    {
+      "id": 48,
+      "description": "Compra de equipamento de som",
+      "price": 4500,
+      "type": "outcome",
+      "category": "Infraestrutura",
+      "createdAt": "2021-03-03 09:50:00"
+    },
+    {
+      "id": 49,
+      "description": "Venda de mentoria personalizada",
+      "price": 5000,
+      "type": "income",
+      "category": "Educação",
+      "createdAt": "2021-03-04 11:30:00"
+    },
+    {
+      "id": 50,
+      "description": "Desenvolvimento de sistema interno",
+      "price": 30000,
+      "type": "income",
+      "category": "Dev",
+      "createdAt": "2021-03-05 12:00:00"
+    }
+  ]
 }
