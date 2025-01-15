@@ -3,17 +3,9 @@ const server = jsonServer.create();
 const router = jsonServer.router('db.json');
 const middlewares = jsonServer.defaults();
 
-// Logging Middleware
-server.use((req, res, next) => {
-  console.log(`Request Method: ${req.method}`);
-  console.log(`Request URL: ${req.url}`);
-  console.log(`Request Headers:`, req.headers);
-  next();
-});
-
 // CORS and Header Configuration
 server.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Origin', 'https://dt-money-mk1yztsqu-rafaels-projects-62f31870.vercel.app'); // Specify your front end origin
   res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   
