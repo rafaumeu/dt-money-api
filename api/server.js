@@ -3,6 +3,14 @@ const server = jsonServer.create();
 const router = jsonServer.router('db.json');
 const middlewares = jsonServer.defaults();
 
+// Logging Middleware
+server.use((req, res, next) => {
+  console.log(`Request Method: ${req.method}`);
+  console.log(`Request URL: ${req.url}`);
+  console.log(`Request Headers:`, req.headers);
+  next();
+});
+
 // CORS and Header Configuration
 server.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
@@ -29,7 +37,7 @@ server.use(router);
 // Optional: Add server listening if needed for local development
 if (require.main === module) {
   server.listen(3000, () => {
-    console.log('JSON Server is running')
+    console.log('JSON Server is running');
   });
 }
 
