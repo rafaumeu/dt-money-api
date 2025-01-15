@@ -3,34 +3,32 @@ const server = jsonServer.create();
 const router = jsonServer.router('db.json');
 const middlewares = jsonServer.defaults();
 
-// CORS and Header Configuration
+// Middleware para configurar CORS
 server.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', '*'); 
+  res.header('Access-Control-Allow-Origin', 'http://localhost:4000'); // Domínio específico
   res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   
-  // Handle OPTIONS requests
   if (req.method === 'OPTIONS') {
-    return res.sendStatus(200);
+    return res.sendStatus(200); // Responde rápido para OPTIONS
   }
   
   next();
 });
 
-// URL Rewriter from the new repository
+// Usar middlewares padrão do JSON Server
+server.use(middlewares);
+
+// Usar o rewriter para ajustar rotas
 server.use(jsonServer.rewriter({
-  '/api/*': '/$1',
+  '/api/*': '/$1', // "/api/resource" vira "/resource"
   '/blog/:resource/:id/show': '/:resource/:id'
 }));
 
-server.use(middlewares);
+// Usar o roteador do JSON Server
 server.use(router);
 
-// Optional: Add server listening if needed for local development
-if (require.main === module) {
-  server.listen(3000, () => {
-    console.log('JSON Server is running');
-  });
-}
-
-module.exports = server;
+// Iniciar o servidor
+server.listen(3000, () => {
+  console.log('JSON Server is running on http://localhost:3000');
+});
