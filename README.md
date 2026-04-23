@@ -73,13 +73,13 @@ npm install json-server
 
 ```javascript
 // Fetch first page with 10 items, sorted by date
-fetch('https://your-vercel-deployment.vercel.app/api/transactions?_page=1&_limit=10&_sort=createdAt&_order=desc')
+fetch('https://dt-money-api-sigma.vercel.app/api/transactions?_page=1&_limit=10&_sort=createdAt&_order=desc')
 ```
 
 ### Create Transaction
 
 ```javascript
-fetch('https://your-vercel-deployment.vercel.app/api/transactions', {
+fetch('https://dt-money-api-sigma.vercel.app/api/transactions', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify({
@@ -99,7 +99,7 @@ Update `src/lib/axios.ts`:
 ```typescript
 export const api = axios.create({
   baseURL: process.env.NODE_ENV === 'production' 
-    ? 'https://your-vercel-deployment.vercel.app/api' 
+    ? 'https://dt-money-api-sigma.vercel.app/api' 
     : 'http://localhost:3333'
 })
 ```
