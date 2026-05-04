@@ -3,7 +3,7 @@
 </div>
 
 <p align="center">
-![JSON Server](https://img.shields.io/badge/JSON_Server-FF0080?style=for-the-badge) ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel) ![Serverless](https://img.shields.io/badge/Serverless-22B14C?style=for-the-badge)
+<img src="https://img.shields.io/badge/JSON_Server-FF0080?style=for-the-badge" alt="JSON Server"/> <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel" alt="Vercel"/> <img src="https://img.shields.io/badge/Serverless-22B14C?style=for-the-badge" alt="Serverless"/>
 </p>
 
 ## Sobre | About
