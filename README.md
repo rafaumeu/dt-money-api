@@ -137,7 +137,7 @@ This project is licensed under the MIT License.
 ---
 
 <p align="center">
-  [![Use this template](https://img.shields.io/badge/Use_This_Template-FFCA28?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rafaumeu/dt-money-api/generate)
+  <a href="https://github.com/rafaumeu/dt-money-api/generate"><img src="https://img.shields.io/badge/Use_This_Template-FFCA28?style=for-the-badge&logo=github&logoColor=white" alt="Use this template"/></a>
 </p>
 
 
