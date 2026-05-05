@@ -142,3 +142,11 @@ This project is licensed under the MIT License.
 
 
 <p align="center"> Developed with 💜 by Rafael Dias Zendron <br> Powered by Vercel 🚀 </p>
+
+
+---
+
+<p align="center">
+  <b>Rafael Zendron</b> · <a href="https://github.com/rafaumeu">GitHub</a> · <a href="https://portfoliodev-blush-pi.vercel.app">Portfolio</a> · <a href="https://br.fiverr.com/rafaelzendron">Fiverr</a>
+</p>
+
