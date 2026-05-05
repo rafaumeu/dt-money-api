@@ -136,4 +136,9 @@ This project is licensed under the MIT License.
 
 ---
 
+<p align="center">
+  [![Use this template](https://img.shields.io/badge/Use_This_Template-FF0080?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rafaumeu/dt-money-api/generate)
+</p>
+
+
 <p align="center"> Developed with 💜 by Rafael Dias Zendron <br> Powered by Vercel 🚀 </p>
