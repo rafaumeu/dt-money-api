@@ -1,3 +1,7 @@
+<div align="center">
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=FFCA28&height=180&section=header&text=DT%20Money%20API&fontSize=42&fontColor=fff&animation=fadeIn&fontAlignY=35&desc=JSON%20Server%20API%20deployed%20on%20Vercel&descSize=18&descAlignY=52"/>
+</div>
+
 I'll convert the document into a well-formatted Markdown README for the DT Money JSON Server deployment to Vercel.
 
 # DT Money - JSON Server Deployment to Vercel 💰🚀
@@ -150,3 +154,8 @@ This project is licensed under the MIT License.
   <b>Rafael Zendron</b> · <a href="https://github.com/rafaumeu">GitHub</a> · <a href="https://portfoliodev-blush-pi.vercel.app">Portfolio</a> · <a href="https://br.fiverr.com/rafaelzendron">Fiverr</a>
 </p>
 
+
+<div align="center">
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=FFCA28&height=100&section=footer"/>
+  <br/><sub>Built with ❤️ by <a href="https://github.com/rafaumeu">Rafael Zendron</a></sub>
+</div>
